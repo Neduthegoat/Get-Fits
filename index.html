@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="control.js" async>
+        
+    </script>
+    <title>WELCOME</title>
+</head>
+<body>
+    <!-- NAV BAR -->
+    <nav class="nav">
+        <h2 class="logo">
+            GET<span>FIT</span>
+        </h2>
+
+        <div class="searchdiv">
+            <input type="search" placeholder="SEARCH PRODUCT">
+        </div>
+
+        <ul class="navlist">
+            <img class="menu_close" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAALRJREFUaEPtlUEOhDAMxOD/j979ANpOcQdUrbmSRB27Vc5j8+/c/PyHAd42qAENQAJeIQgQt2sAI4QD/sLAB0Ki7T8hJwYMABVoAALstidvoHsCON0AECBu1wBGCAesMNBedHgPjBgZYEBIA6Mr9Or/FY/YAISABgi9Fb0amKB4d+HV90CawQBXpJ58A9sbSK/aVN2TBqYOlhYbICXVqtNAi2w6VwMpqVadBlpk07kaSEm16r75WwwxK4QftgAAAABJRU5ErkJggg=="/>
+            <li>
+                <a class="active" href="#"> HOME</a>
+            </li>
+            <li class="shop" id="">
+                <a href="product.html"> PRODUCTS</a>
+                <!-- <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAYBJREFUaEPtmYEKAiEQRL0vq76s+rL6s2LijBLPHXc8QlohONA9582ul+iSJm/L5PpTAPw6g3tk4JhSwu+wwuH5uj7fU0r4DWsjASD0vIpvCQQAgIaAjAK4rOJ7nAUE4qQ2AsAjPouWIVQAlM2tYmEuE3ThOTuNEivbSSknFQDiAfHZWoJq2QIgYlxNAai5z5RELc6dBQWgdJMRn10uM9cT+5WpXwGUWXCXkQLwKIq2513TA4BdMeDtXY9r5VdCFaDGv/S0ANitgevz1xHU3Hq0AGrf+I55hw7dXOQtgDLFQxU5XlbV+lcAJay6CK14q99cxNYLrH6rSqx4qz8AKIcaabDirX45A1aJqP0BQDmg2iyUWJTQjua/Xk1VQM8/sbJz9cAGAOWAx1oyhpo/Soh00zMsMkA54LGWjKHmjzVAuukZFhmgHPBYS8ZQ889yrLJ5hjULwObptXUyV7t9IStg6LBNncwOU7kDUyjyLWbzRpMBUETsHhsAu1tsTDB9Bp70F2Qx4o3dOgAAAABJRU5ErkJggg=="/> -->
+            </li>
+            <li class="cart">
+                <a href="cart.html"> CART</a>
+                <!-- <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAbhJREFUaEPtmDFSxDAMRf82VFScCA4EVwAaLsCBWA4EFRUNjJiY2VEU51uRHWfG6XbH8urpS9/enHDw53Tw/DEA9lZwKNCjAj9GUmcA7wCe9k5Y/77VQhZAinvuDaIUQEDuAIgiXTweAEleILp4GBe6BfCmsu1GBQZAchcAAUlPNyqwAJYKbGzVVitJQqvQRRuVAFgqVK2usfnMxksAZL/cGdECZjZ7pQC6jVoknT18SwH2bqPNLdTaUnXLzoyjVAEBaGWpcnF8XDt7PADWMNewVD1v5kXSC1D7ZKZV9gLUvh/p9lm8xnsBag+zHt4qALTMhYeFrr6ELxZ6iwKWChHDTLdPloysmlYh4pq96v2XuW1VINpSKe+PBoi0VMr7owGiLNVlChEtZA0zOULZZdQrnCiAGrfUpgA1/uxQxaUWkf0QpULRa8xIAJIzdtkAuKjnzfTi93767nX6/LlSc2/c37ZRClwDeAGQkk85C8RDBsAb979lFIBU8WMh0dxveOMGgC62txW8ceEKyIbeYfTGhQ5xqohU9Gr68A3gi3R9b1yYC5F5xi+LcqH4zMgdBwBZqGrLDq/AL4HOZjH//bJXAAAAAElFTkSuQmCC"/> -->
+            </li>
+        </ul>
+        <img class="menu-mobile"  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAK1JREFUaEPtlkEKwCAQxPT/j64/kIEwLNL07Ky7iWL3evzbj/e/HGDaoAY0AAl4hCBAHNcARggL/MLAByHR+BVyYsABoAINQIDdeHIHuh3A6g4AAeK4BjBCWCAx4EPWhKwBSDeJ41+JZJOxNckRGmsu2dgBEkrNNRpo0k1qJwZ8iROSlzX4HdDAtAG4fzeeXOJuB7C6A0CAOK4BjBAW0AAEiOMawAhhAQ1AgDh+AJfZDDGRtEaJAAAAAElFTkSuQmCC"/>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <div class="heroContainer">
+            <div class="heroText">
+                <h2>Shop your way to being fit at ease</h2>
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius, repellendus. Atque, fuga totam et nulla pariatur iure suscipit tempore deserunt.
+                </p>
+                <div class="btndiv"><button class="shopbtn"><a href="#product">SHOP NOW!</a></button></div>
+            </div>
+
+            <!-- <div class="heroImage">
+                <img class="" src="/assets/heroimg.svg" alt="">
+            </div> -->
+        </div>
+    </section>
+
+    <!-- PRODUCT -->
+    <section class="product" id="product">
+        <div class="ptext">
+            <h2>PRODUCTS</h2>
+        </div>
+
+        <div class="cardRow">
+            <div class="card">
+                <div class="img">
+                    <img class="productImage" src="1.jpg" alt="">
+                </div>
+                <div class="card-detail">
+                    <h3 class="productName">PRODUCT NINJA</h3>
+                    <div class="star">⭐️ ⭐️ ⭐️ ⭐️ ⭐️ </div>
+                    <div class="star">$50 - $100</div>
+                    <button class="productButton">Add to Cart</button>
+                </div>
+            </div>
+            <div class="card">
+                <div class="img">
+                    <img class="productImage" src="2.jpg" alt="">
+                </div>
+                <div class="card-detail">
+                    <h3 class="productName">PRODUCT NINJA</h3>
+                    <div class="star">⭐️ ⭐️ ⭐️ ⭐️ ⭐️ </div>
+                    <div class="star">$50 - $100</div>
+                    <button class="productButton">Add to Cart</button>
+                </div>
+            </div>
+            <div class="card">
+                <div class="img">
+                    <img class="productImage" src="3.jpg" alt="">
+                </div>
+                <div class="card-detail">
+                    <h3 class="productName">PRODUCT NINJA</h3>
+                    <div class="star">⭐️ ⭐️ ⭐️ ⭐️ ⭐️ </div>
+                    <div class="star">$50 - $100</div>
+                    <button class="productButton">Add to Cart</button>
+                </div>
+            </div>
+            <div class="card">
+                <div class="img">
+                    <img class="productImage" src="4.jpg" alt="">
+                </div>
+                <div class="card-detail">
+                    <h3 class="productName">PRODUCT NINJA</h3>
+                    <div class="star">⭐️ ⭐️ ⭐️ ⭐️ ⭐️ </div>
+                    <div class="star">$50 - $100</div>
+                    <button class="productButton">Add to Cart</button>
+                </div>
+            </div>
+            <div class="card">
+                <div class="img">
+                    <img class="productImage" src="5.jpg" alt="">
+                </div>
+                <div class="card-detail">
+                    <h3 class="productName">PRODUCT NINJA</h3>
+                    <div class="star">⭐️ ⭐️ ⭐️ ⭐️ ⭐️ </div>
+                    <div class="star">$50 - $100</div>
+                    <button class="productButton">Add to Cart</button>
+                </div>
+            </div>
+            <div class="card">
+                <div class="img">
+                    <img class="productImage" src="6.jpg" alt="">
+                </div>
+                <div class="card-detail">
+                    <h3 class="productName">PRODUCT NINJA</h3>
+                    <div class="star">⭐️ ⭐️ ⭐️ ⭐️ ⭐️ </div>
+                    <div class="star">$50 - $100</div>
+                    <button class="productButton">Add to Cart</button>
+                </div>
+            </div>
+            <div class="card">
+                <div class="img">
+                    <img class="productImage" src="7.jpg" alt="">
+                </div>
+                <div class="card-detail">
+                    <h3 class="productName">PRODUCT NINJA</h3>
+                    <div class="star">⭐️ ⭐️ ⭐️ ⭐️ ⭐️ </div>
+                    <div class="star">$50 - $100</div>
+                    <button class="productButton">Add to Cart</button>
+                </div>
+            </div>
+            <div class="card">
+                <div class="img">
+                    <img class="productImage" src="8.jpg" alt="">
+                </div>
+                <div class="card-detail">
+                    <h3 class="productName">PRODUCT NINJA</h3>
+                    <div class="star">⭐️ ⭐️ ⭐️ ⭐️ ⭐️ </div>
+                    <div class="star">$50 - $100</div>
+                    <button class="productButton">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="showbtndiv">
+            <a class="showbtn" href="product.html">SHOW ALL PRODUCTS</a>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="row">
+            <div class="col1">
+                <h3>
+                    Contact Us
+                </h3>
+                <ul>
+                    <li class="flexwicon">
+                        <div class="flexnicon">
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAY9JREFUaEPtmFsOwiAQRacrU1emrkx3ppmkGKTzAjpQlH6ZtIV77ryKCwx+LYPrhwnQO4IzAjMClQ78bAqdAeC6moO/e193ALhRIrgIvHorZva/AMAzvkcBIGlw/2gcKB4hPhcFcFT3UXQRQO9CTw390mOJAFtADfKLSudsADJ0zuJDF6Q6YBFA0NsiGij6IRhUBYDrekJYOmA1gBcEum4ZmtkA6Dg3FzaDpaA2pHyn9s4GwBek0NaklLRuMKe6jcbEXJhLIDjxOKxwvfDJsCsAZoi08deYZ9JJS5n0o213AAlCK3CpRXJRdAFAoblirCmTBs4NIGzECYsd5Wpn83FGpJ07gJZSKJLq79bCbwKgQaTG5syPZgBBpDRR0xZpmXvNAbhoWFOmeRFzLmJxn9ab8WCyuB4/0yUCuSKl5yfA8GfiCVBZEP9XA9ajXaWxxa+rJ7IjA2yGIVWg2t8axdbt8OJGr9RhLH9x7KBJXSIcLclp3rtFquq1ByaA5pD3/RkBb4e19WcENIe87w8fgTfiLW0xk58VHwAAAABJRU5ErkJggg=="/>
+                            <a href="mailto:wdagah14@gmail.com">wdagah14@gmail.com</a>
+                        </div>
+                    </li>
+                    <li class="flexwicon">
+                        <div class="flexnicon">
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAfxJREFUaEPtmAtOAzEMRN2TAScDTgacDDQSrkJw7HE+m660kVBLlW3nxR57vTc5+bqdXL9cALsj2BOBZxF5FRG8vovI206ILADEQny5tkJkACzxCrINggXwxG+FYAAY8dsgIoCWeKQMVu0HfHZoOnkAqDIfRoUpBXqAh1QnD4CtOFshPIDvRLlsQbyIyOfKPpEB6PELxANi2VoNAOER+BCc9+UwMIysy0uHbT6YAbBNfBTeWlirvtdmP7QXZPpAy5CZajWU79bFkcFqcdb+2ivLK08JEgEwRq479kMDsGm0vIFpFKIIWPdDD5VGEQBA6zSyqpEFeshdKQPARoG9+auLydCMzQCwUbD2RT2hF/p+CCyAFQXLqK0ZwgKZMmOzANbptipSNIJ601yZXpSHMgAZo3qRyHTjECIDgB/O5mwUDYXpnrGzAD1GbYGX4nV+Tt/Z9gAww34rTVSoPs2wCkEKogcA4kYgGA/QM3YvgJcWqE7I6dFh3oL4V/lGALxIRA1sJAp/NI8CKIQ+breEhaXQuIj2wQwA/f2oZGqpjJ7Y0eKjmZgJc70ngtD9yOWv33/wXv2SEr8CgI1G5nDcFJyZQpYonOhT9XxpmviVEahFom/gLwNDmX91BKKODCCtZKU/6D6yCyCTRu7eC2DaUXZ+0RWBzoObdtnpI/AD39mOMYG/wgIAAAAASUVORK5CYII="/>
+                            <a href="#">08149275652</a>
+                        </div>
+                    </li>
+                    <li class="flexwicon">
+                        <div class="flexnicon">
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAXdJREFUaEPtmWuOwzAIhOnNuifr9mTdm7ViFVd5ODYwY0Vp8Z9KlYH5ACd2fJGTj8vJ9UsCHF3BkRX4FZHbBPgjIn8jYEcBzMUX3XcR0f+pYwRATfwwCDZAS/wQCCaARTwdggWwJ177XkdZzPP+p6wJBkBLfFm0ljmhxY0CeIR55pphEICIoIhNEyYKgAhBbDcwEQCGAIaPfxgvAC3w9FaGn04eAKb40gqwTysAHKixEiHfFgAogPF5GI7RAwg7NgqfTwvFagGEHAaEQxB7AK2NWa9qIIM8dxxU9041MVcReTRUHAWgkjYQNTF7GShMRwLosVSPp+/xkQDaQvqG1N/aOKoCmn1tocXHAYuYdUtZbJCF7IpnEeNyiCifbF3xEoCQ8bWLrACUEUJFsgJZAbCNsoWyhbKFlhlo7ha+cisBdojbHK6A5+LCra5jsDmBredbWkhtesdMtvDir3u7aQXondLYAObbGysAWyDNXwLQUhl0dPoKvAC492wxL+JgqwAAAABJRU5ErkJggg=="/>
+                            <a href="#">Home</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="col2">
+                <h3>
+                    Information
+                </h3>
+                <ul>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Our Company</a></li>
+                    <li><a href="#">Our History</a></li>
+                    <li><a href="#">Contacts</a></li>
+                    <li><a href="#">Delivery Information</a></li>
+                </ul>
+            </div>
+            <div class="col3">
+                <h3>
+                    How can we help?
+                </h3>
+                <ul>
+                    <li><a href="#">Order Tracking</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Support</a></li>
+                </ul>
+            </div>
+            <div class="col4">
+                <h3>
+                    How can we help?
+                </h3>
+                <ul>
+                    <li><a href="#">My account</a></li>
+                    <li><a href="#">Checkout</a></li>
+                    <li><a href="#">Cart</a></li>
+                    <li><a href="#">Sample Page</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

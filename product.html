@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Product</title>
+</head>
+<body>
+    <!-- NAV BAR -->
+    <nav class="nav">
+        <h2 class="logo">
+           GET<span>FIT</span>
+        </h2>
+
+        <div class="searchdiv">
+            <input type="search" id="search" placeholder="SEARCH PRODUCT">
+        </div>
+
+        <ul class="navlist">
+            <img class="menu_close" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAALRJREFUaEPtlUEOhDAMxOD/j979ANpOcQdUrbmSRB27Vc5j8+/c/PyHAd42qAENQAJeIQgQt2sAI4QD/sLAB0Ki7T8hJwYMABVoAALstidvoHsCON0AECBu1wBGCAesMNBedHgPjBgZYEBIA6Mr9Or/FY/YAISABgi9Fb0amKB4d+HV90CawQBXpJ58A9sbSK/aVN2TBqYOlhYbICXVqtNAi2w6VwMpqVadBlpk07kaSEm16r75WwwxK4QftgAAAABJRU5ErkJggg=="/>
+            <li>
+                <a href="index.html"> HOME</a>
+            </li>
+            <li class="shop" id="">
+                <a class="active" href="#product"> PRODUCTS</a>
+                <!-- <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAYBJREFUaEPtmYEKAiEQRL0vq76s+rL6s2LijBLPHXc8QlohONA9582ul+iSJm/L5PpTAPw6g3tk4JhSwu+wwuH5uj7fU0r4DWsjASD0vIpvCQQAgIaAjAK4rOJ7nAUE4qQ2AsAjPouWIVQAlM2tYmEuE3ThOTuNEivbSSknFQDiAfHZWoJq2QIgYlxNAai5z5RELc6dBQWgdJMRn10uM9cT+5WpXwGUWXCXkQLwKIq2513TA4BdMeDtXY9r5VdCFaDGv/S0ANitgevz1xHU3Hq0AGrf+I55hw7dXOQtgDLFQxU5XlbV+lcAJay6CK14q99cxNYLrH6rSqx4qz8AKIcaabDirX45A1aJqP0BQDmg2iyUWJTQjua/Xk1VQM8/sbJz9cAGAOWAx1oyhpo/Soh00zMsMkA54LGWjKHmjzVAuukZFhmgHPBYS8ZQ889yrLJ5hjULwObptXUyV7t9IStg6LBNncwOU7kDUyjyLWbzRpMBUETsHhsAu1tsTDB9Bp70F2Qx4o3dOgAAAABJRU5ErkJggg=="/> -->
+            </li>
+            <li class="cart">
+                <a href="cart.html"> CART</a>
+                <!-- <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAbhJREFUaEPtmDFSxDAMRf82VFScCA4EVwAaLsCBWA4EFRUNjJiY2VEU51uRHWfG6XbH8urpS9/enHDw53Tw/DEA9lZwKNCjAj9GUmcA7wCe9k5Y/77VQhZAinvuDaIUQEDuAIgiXTweAEleILp4GBe6BfCmsu1GBQZAchcAAUlPNyqwAJYKbGzVVitJQqvQRRuVAFgqVK2usfnMxksAZL/cGdECZjZ7pQC6jVoknT18SwH2bqPNLdTaUnXLzoyjVAEBaGWpcnF8XDt7PADWMNewVD1v5kXSC1D7ZKZV9gLUvh/p9lm8xnsBag+zHt4qALTMhYeFrr6ELxZ6iwKWChHDTLdPloysmlYh4pq96v2XuW1VINpSKe+PBoi0VMr7owGiLNVlChEtZA0zOULZZdQrnCiAGrfUpgA1/uxQxaUWkf0QpULRa8xIAJIzdtkAuKjnzfTi93767nX6/LlSc2/c37ZRClwDeAGQkk85C8RDBsAb979lFIBU8WMh0dxveOMGgC62txW8ceEKyIbeYfTGhQ5xqohU9Gr68A3gi3R9b1yYC5F5xi+LcqH4zMgdBwBZqGrLDq/AL4HOZjH//bJXAAAAAElFTkSuQmCC"/> -->
+            </li>
+        </ul>
+        <img class="menu-mobile"  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAK1JREFUaEPtlkEKwCAQxPT/j64/kIEwLNL07Ky7iWL3evzbj/e/HGDaoAY0AAl4hCBAHNcARggL/MLAByHR+BVyYsABoAINQIDdeHIHuh3A6g4AAeK4BjBCWCAx4EPWhKwBSDeJ41+JZJOxNckRGmsu2dgBEkrNNRpo0k1qJwZ8iROSlzX4HdDAtAG4fzeeXOJuB7C6A0CAOK4BjBAW0AAEiOMawAhhAQ1AgDh+AJfZDDGRtEaJAAAAAElFTkSuQmCC"/>
+    </nav>
+    
+    <!-- PRODUCT -->
+    <section class="product" id="product">
+        <div class="ptext">
+            <h2>PRODUCTS</h2>
+        </div>
+
+        <div id="productTab" class="cardRow">
+            
+            <!-- <div class="card">
+                <div class="img">
+                    <a href="/page/viewProduct.html"><img class="productImage" src="/assets/2.jpg" alt=""></a>
+                </div>
+                <div class="card-detail">
+                    <h3 class="productName">PRODUCT NINJA</h3>
+                    <div class="star">⭐️ ⭐️ ⭐️ ⭐️ ⭐️ </div>
+                    <div class="star">$50 - $100</div>
+                    <button class="productButton">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="img">
+                    <a href="/page/viewProduct.html"><img class="productImage" src="/assets/3.jpg" alt=""></a>
+                </div>
+                <div class="card-detail">
+                    <h3 class="productName">PRODUCT NINJA</h3>
+                    <div class="star">⭐️ ⭐️ ⭐️ ⭐️ ⭐️ </div>
+                    <div class="star">$50 - $100</div>
+                    <button class="productButton">Add to Cart</button>
+                </div>
+            </div>
+            <div class="card">
+                <div class="img">
+                    <a href="/page/viewProduct.html"><img class="productImage" src="/assets/4.jpg" alt=""></a>
+                </div>
+                <div class="card-detail">
+                    <h3 class="productName">PRODUCT NINJA</h3>
+                    <div class="star">⭐️ ⭐️ ⭐️ ⭐️ ⭐️ </div>
+                    <div class="star">$50 - $100</div>
+                    <button class="productButton">Add to Cart</button>
+                </div>
+            </div>
+            <div class="card">
+                <div class="img">
+                    <a href="/page/viewProduct.html"><img class="productImage" src="/assets/5.jpg" alt=""></a>
+                </div>
+                <div class="card-detail">
+                    <h3 class="productName">PRODUCT NINJA</h3>
+                    <div class="star">⭐️ ⭐️ ⭐️ ⭐️ ⭐️ </div>
+                    <div class="star">$50 - $100</div>
+                    <button class="productButton">Add to Cart</button>
+                </div>
+            </div>
+            <div class="card">
+                <div class="img">
+                    <a href="/page/viewProduct.html"><img class="productImage" src="/assets/6.jpg" alt=""></a>
+                </div>
+                <div class="card-detail">
+                    <h3 class="productName">PRODUCT NINJA</h3>
+                    <div class="star">⭐️ ⭐️ ⭐️ ⭐️ ⭐️ </div>
+                    <div class="star">$50 - $100</div>
+                    <button class="productButton">Add to Cart</button>
+                </div>
+            </div>
+            <div class="card">
+                <div class="img">
+                    <a href="/page/viewProduct.html"><img class="productImage" src="/assets/7.jpg" alt=""></a>
+                </div>
+                <div class="card-detail">
+                    <h3 class="productName">PRODUCT NINJA</h3>
+                    <div class="star">⭐️ ⭐️ ⭐️ ⭐️ ⭐️ </div>
+                    <div class="star">$50 - $100</div>
+                    <button class="productButton">Add to Cart</button>
+                </div>
+            </div>
+            <div class="card">
+                <div class="img">
+                    <a href="/page/viewProduct.html"><img class="productImage" src="/assets/8.jpg" alt=""></a>
+                </div>
+                <div class="card-detail">
+                    <h3 class="productName">PRODUCT NINJA</h3>
+                    <div class="star">⭐️ ⭐️ ⭐️ ⭐️ ⭐️ </div>
+                    <div class="star">$50 - $100</div>
+                    <button class="productButton">Add to Cart</button>
+                </div>
+            </div>
+            <div class="card">
+                <div class="img">
+                    <a href="/page/viewProduct.html"><img class="productImage" src="/assets/8.jpg" alt=""></a>
+                </div>
+                <div class="card-detail">
+                    <h3 class="productName">PRODUCT NINJA</h3>
+                    <div class="star">⭐️ ⭐️ ⭐️ ⭐️ ⭐️ </div>
+                    <div class="star">$50 - $100</div>
+                    <button class="productButton">Add to Cart</button>
+                </div>
+            </div>
+            <div class="card">
+                <div class="img">
+                    <a href="/page/viewProduct.html"><img class="productImage" src="/assets/8.jpg" alt=""></a>
+                </div>
+                <div class="card-detail">
+                    <h3 class="productName">PRODUCT NINJA</h3>
+                    <div class="star">⭐️ ⭐️ ⭐️ ⭐️ ⭐️ </div>
+                    <div class="star">$50 - $100</div>
+                    <button class="productButton">Add to Cart</button>
+                </div>
+            </div>
+            <div class="card">
+                <div class="img">
+                    <a href="/page/viewProduct.html"><img class="productImage" src="/assets/8.jpg" alt=""></a>
+                </div>
+                <div class="card-detail">
+                    <h3 class="productName">PRODUCT NINJA</h3>
+                    <div class="star">⭐️ ⭐️ ⭐️ ⭐️ ⭐️ </div>
+                    <div class="star">$50 - $100</div>
+                    <button class="productButton">Add to Cart</button>
+                </div>
+            </div>
+            <div class="card">
+                <div class="img">
+                    <a href="/page/viewProduct.html"><img class="productImage" src="/assets/8.jpg" alt=""></a>
+                </div>
+                <div class="card-detail">
+                    <h3 class="productName">PRODUCT NINJA</h3>
+                    <div class="star">⭐️ ⭐️ ⭐️ ⭐️ ⭐️ </div>
+                    <div class="star">$50 - $100</div>
+                    <button class="productButton">Add to Cart</button>
+                </div>
+            </div> -->
+
+        </div>
+    </section>
+    <script src="control.js" async>
+
+    </script>
+</body>
+</html>
